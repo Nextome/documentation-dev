@@ -9,6 +9,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
+
+    Jetpack Compose is not supported. If your goal is to use Nextome Map View inside a Jetpack Compose application, you need to use Views inside Compose. Follow [this](https://developer.android.com/develop/ui/compose/migrate/interoperability-apis/views-in-compose#:~:text=InteroperabilityAPIsSnippets.kt-,Fragments%20in%20Compose,the%20holder%20for%20your%20Fragment%20.) to learn more abount that.
+
 === "Android"
     ```kotlin
 

@@ -70,22 +70,22 @@ nav:
           - 'Changelog':
             - 'Android': 'Nextome SDK/Android/changelog.md'
             - 'iOS': 'Nextome SDK/iOS/changelog.md'
-      ##- 'Map View' : 'Map View/map-view.md'
-      #- 'Nextome MapView':
-          #- 'Introduction': 'Nextome Map View/introduction.md'
-          #- 'Integration': 'Nextome Map View/integration.md'
-          #- 'NextomeMapView class': 'Nextome Map View/nextomeMapViewClass.md'
-          #- 'Usage':
-          #  - 'Initialize': 'Nextome Map View/Usage/initialize.md'
-          #  - 'Events': 'Nextome Map View/Usage/events.md'
-          #  - 'Tile': 'Nextome Map View/Usage/manage-tiles.md'
-          #  - 'Layers': 'Nextome Map View/Usage/manage-layers.md'
-          #  - 'Markers': 'Nextome Map View/Usage/manage-markers.md'
-          #  - 'Enums': 'Nextome Map View/Usage/enums.md'
-          #- 'Changelog':
-          #  - "Android": "Nextome Map View/Changelog/changelog-android.md"
-          #  - "iOS": "Nextome Map View/Changelog/changelog-ios.md"
-          #- 'Example': 'Nextome Map View/example.md'
+      - 'Map View' :
+        - 'Nextome MapView':
+          - 'Introduction': 'Nextome Map View/introduction.md'
+          - 'Integration': 'Nextome Map View/integration.md'
+          - 'NextomeMapView class': 'Nextome Map View/nextomeMapViewClass.md'
+          - 'Usage':
+            - 'Initialize': 'Nextome Map View/Usage/initialize.md'
+            - 'Events': 'Nextome Map View/Usage/events.md'
+            - 'Tile': 'Nextome Map View/Usage/manage-tiles.md'
+            - 'Layers': 'Nextome Map View/Usage/manage-layers.md'
+            - 'Markers': 'Nextome Map View/Usage/manage-markers.md'
+            - 'Enums': 'Nextome Map View/Usage/enums.md'
+          - 'Changelog':
+            - "Android": "Nextome Map View/Changelog/changelog-android.md"
+            - "iOS": "Nextome Map View/Changelog/changelog-ios.md"
+          - 'Example': 'Nextome Map View/example.md'
       - 'REST APIs' : 'Web APIs/web-apis.md' 
     - 'Manuals':
       - 'Nextome Hub Web Guide' : 'Manuals/nextome-hub-web-guide.md'
