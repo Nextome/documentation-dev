@@ -154,8 +154,7 @@ Then it is necessary to configure our private Spec Repo.
     pod init
     ```
 
-3. To your Podfile, be sure that the platform is at least 13.2 then add the CocoaPods specs source and our Nextome source. Then add the NextomeMapView_<Environment> pod.
-The <Environment> can be Release and Debug.
+3. To your Podfile, be sure that the platform is at least 13.2 then add the CocoaPods specs source and our Nextome source. Then add the NextomeMapView_Environment pod where Environment can be can be Release or Debug.
 
 
     ```bash
