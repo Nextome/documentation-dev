@@ -105,17 +105,13 @@ To run, NextomeMapView requires the following permissions:
 
 - See [Map-usage](./Usage/initialize.md) to use Nextome MapView component.
 
-### Examples
-A full working example app is available on [this repository](https://github.com/Nextome/nextome-phoenix-android-whitelabel).
-Run the `MapActivity` to see Nextome Sdk in action. It also contains a seamless outdoor/indoor map integration using *OpenStreetMap* for outdoor and *Nextome Flutter Map* for indoor.
-
 <br>
 
 ## IOS integraton
 
 ### Prerequisites
 
-- Xcode 14.3
+- Xcode 15.3
 - Make sure that your project meets these requirements: 
     - Swift 5.7
     - Minimum deployment: iOS 13.2
@@ -158,34 +154,34 @@ Then it is necessary to configure our private Spec Repo.
     pod init
     ```
 
-3. To your Podfile, be sure that the platform is at least 13.2 then add the CocoaPods specs source and our Nextome source. Then add the NextomeMapView pod
+3. To your Podfile, be sure that the platform is at least 13.2 then add the CocoaPods specs source and our Nextome source. Then add the NextomeMapView_<Environment> pod.
+The <Environment> can be Release and Debug.
 
-    As opposed to the cocoapods client's default behavior, the cocoapods-art plugin does not automatically update its index whenever you run client commands (such as install). To keep your plugin's index synchronized with your CocoaPods repository, you need to update it by executing the following command:
 
     ```bash
     platform :ios, '13.2'
 
-    source 'https://github.com/CocoaPods/Specs.git'TODO
+    source 'https://github.com/CocoaPods/Specs.git'
     source 'https://github.com/Nextome/Specs'
 
     use_frameworks!
 
     target 'MyApp' do
-        pod 'NextomeMapView', '{last_version}'
+        pod 'NextomeMapView_Release', '{last_version}'
     end
     ```
 
     !!! note
-        Since NextomeMapView is still in RC CocoaPods require to specify the version explicitly like this
-        `pod 'NextomeMapView', '2.0.0-rc1'`
+        The `Release` dependency will not work properly in the simulator. The app will compile but the map will not be visible
+   
 
-4. Install the pods, then open your .xcworkspace file to see the project in Xcode
+5. Install the pods, then open your .xcworkspace file to see the project in Xcode
 
     ```bash
     pod install
     ```
 
-5. Open your `xcworkspace` file and start to use NextomeMapView
+6. Open your `xcworkspace` file and start to use NextomeMapView
 
 ### Next steps
 
