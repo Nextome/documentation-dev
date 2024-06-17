@@ -36,7 +36,7 @@ In this sections we will go through the integration of the NextomeLocalizationMa
     use_frameworks!
 
     target 'MyApp' do
-        pod 'NextomeLocalizationMapUtils_Release', '1.5.1.1'
+        pod 'NextomeLocalizationMapUtils_Release', '1.4.4.2'
     end
 
     post_install do |installer|
