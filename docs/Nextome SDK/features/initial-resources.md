@@ -11,7 +11,7 @@ Please, update the version number incrementally when updating the zip file other
     === "Android"
         ![Initial resources assets](../../assets/initialResourceAndroid.png)
          ```kotlin
-            nextomeSdk = NextomePhoenixSdk(
+            nextomeSdk = NextomeLocalizationSdk(
                 clientId = CLIENT_ID,
                 clientSecret = CLIENT_SECRET,
                 context = context as ApplicationContext,
@@ -20,7 +20,7 @@ Please, update the version number incrementally when updating the zip file other
     === "iOS"
         ![Initial resources assets](../../assets/initialResource.png)
         ```swift 
-            nextomeSdk = NextomePhoenixSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
+            nextomeSdk = NextomeLocalizationSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
                     .setInitialData(nextomeResource: AssetResource(name: "resources.zip", venueId: myVenueId, version: 2))
                     .build()
         ```
@@ -29,7 +29,7 @@ Please, update the version number incrementally when updating the zip file other
 
 === "Android"
       ```kotlin
-        nextomeSdk = NextomePhoenixSdk(
+        nextomeSdk = NextomeLocalizationSdk(
             clientId = CLIENT_ID,
             clientSecret = CLIENT_SECRET,
             context = context as ApplicationContext,
@@ -37,7 +37,7 @@ Please, update the version number incrementally when updating the zip file other
       ```
 === "iOS"
       ```swift 
-            nextomeSdk = NextomePhoenixSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
+            nextomeSdk = NextomeLocalizationSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
                     .setInitialData(nextomeResource: AssetResource(name: "resources.zip", venueId: myVenueId, version: 2))
                     .build()
       ```
@@ -47,7 +47,7 @@ If you don't want to bundle the initial data inside the `assets` folder (for exa
 
 === "Android"
     ``` kotlin
-        nextomeSdk = NextomePhoenixSdk(
+        nextomeSdk = NextomeLocalizationSdk(
         clientId = CLIENT_ID,
         clientSecret = CLIENT_SECRET,
         context = context as ApplicationContext,
@@ -56,7 +56,7 @@ If you don't want to bundle the initial data inside the `assets` folder (for exa
     ```
 === "iOS"
     ```swift
-        nextomeSdk = NextomePhoenixSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
+        nextomeSdk = NextomeLocalizationSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
         .setInitialData(nextomeResource: LocalResource(name: LOCAL_PATH, venueId: myVenueId, version: 2))
         .build()
     ```

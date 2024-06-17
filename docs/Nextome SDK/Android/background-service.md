@@ -41,7 +41,7 @@ It is possible to query or observe Nextome service state to be notified when the
 Will return true if Nextome is running either in normal mode or with a foreground service.
 
 ```kotlin
-    val isServiceRunning = NextomePhoenixSdk.isRunning()
+    val isServiceRunning = NextomeLocalizationSdk.isRunning()
 ```
 
 ### Observe state
@@ -49,7 +49,7 @@ Will emit true **only** if Nextome is running with a foreground service.
 It this emits false, Nextome could be still running if started in normal mode with `nextomeSdk.start()`.
 
 ```kotlin
-    NextomePhoenixSdk.isBackgroundServiceRunningObservable(context).collect { running ->
+    NextomeLocalizationSdk.isBackgroundServiceRunningObservable(context).collect { running ->
         Log.e(TAG, "Nextome running in background: $running")
     }
 ```
@@ -65,7 +65,7 @@ because Nextome SDK will skip the initial state machine phases (Searching venue,
     override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
-        if (!NextomePhoenixSdk.isRunning()) {
+        if (!NextomeLocalizationSdk.isRunning()) {
             // Nextome needs to start from the beginning.
             // Emitted states will be SEARCHING -> GET_PACKET -> FINDING_FLOOR ...
             startNextomeSdk()

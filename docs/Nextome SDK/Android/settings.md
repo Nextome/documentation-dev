@@ -1,7 +1,7 @@
 # Override default settings
-The NextomePhoenixSdk uses some parameter to customize the algorithm and additional features. These parameter are defined in the web portal and should only be changed from there.
+The NextomeLocalizationSdk uses some parameter to customize the algorithm and additional features. These parameter are defined in the web portal and should only be changed from there.
 
-However, durning the NextomePhoenixSdk initialization, it is possible to override some of these settings, the override will be forced on all the venues.
+However, durning the NextomeLocalizationSdk initialization, it is possible to override some of these settings, the override will be forced on all the venues.
 
 The parameters are summarized in the table below, with an indication of the default values used by the web dashboard.
 !!! danger

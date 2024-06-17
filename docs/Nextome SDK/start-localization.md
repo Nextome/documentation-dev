@@ -309,15 +309,15 @@ It is possible to observe errors using `getErrorsObservable()`:
         Log.e(TAG, "New error received: ${error.message}")
 
         when (error) {
-            is NextomeException.GenericException -> {
+            is GenericException -> {
                 showMessageEvent(message = error.message)
             }
 
-            is NextomeException.InvalidCredentialException -> {
+            is InvalidCredentialException -> {
                 logOutAndShowLoginScreen()
             }
 
-            is NextomeException.CriticalException -> {
+            is CriticalException -> {
                 showMessageEvent(message = error.message)
                 // Need to restart sdk
             }
@@ -330,12 +330,12 @@ It is possible to observe errors using `getErrorsObservable()`:
         guard let error = error else{
             return
         }
-        if error is NextomeException.InvalidCredentialException{
+        if error is InvalidCredentialException{
             self.logoutAndShowLoginScreen()
-        }else if error is NextomeException.CriticalException{
+        }else if error is CriticalException{
             self.showMessageEvent(message: error.message)
             //Need to restart sdk
-        }else if error is NextomeException.GenericException {
+        }else if error is GenericException {
             self.showMessageEvent(message: error.message)
         }
     })

@@ -15,7 +15,7 @@ A full working example app is available on [this repository](https://github.com/
 
 ### Cocoapods
 
-Phoenix Sdk is distributed with [Cocoapods](https://guides.cocoapods.org/) using our Podspec repo. Be sure to have CocoaPods installed, or follow [this guide](https://guides.cocoapods.org/using/getting-started.html) to install it.
+Nextome Localization Sdk is distributed with [Cocoapods](https://guides.cocoapods.org/) using our Podspec repo. Be sure to have CocoaPods installed, or follow [this guide](https://guides.cocoapods.org/using/getting-started.html) to install it.
 
 Then it is necessary to configure our Spec Repo.
 
@@ -46,7 +46,7 @@ Then it is necessary to configure our Spec Repo.
     pod init
     ```
 
-6. To your Podfile, be sure that the platform is at least 13.2 then add the CocoaPods specs source and our Nextome source. Then add the PhoenixSdk pod
+6. To your Podfile, be sure that the platform is at least 13.2 then add the CocoaPods specs source and our Nextome source. Then add the NextomeLocalization pod
 
     ```
     platform :ios, '13.2'
@@ -57,14 +57,14 @@ Then it is necessary to configure our Spec Repo.
     use_frameworks!
 
     target 'MyApp' do
-        pod 'PhoenixSdk'
+        pod 'NextomeLocalization'
     end
     ```
 
     !!!note
         Since SDK is still in RC CocoaPods require to specify the version explicitly like this
         ```swift
-            pod 'PhoenixSdk', '2.0.0-rc4'
+            pod 'NextomeLocalization', '3.0.0-rc02'
         ```
 
 
@@ -111,22 +111,22 @@ Those credentials are available from your profile, in the Apps section.
 ![Retrieve SDK Credentials](../../assets/sdk_key.png)
 
 ## SDK Initialization
-Firsty import the Phoenix SDK Module
+Firsty import the Nextome Localization SDK Module
 ```swift
-import PhoenixSdk
+import NextomeLocalization
 ```
 
-Then initialize the NextomePhoenixSdk.
+Then initialize the NextomeLocalizationSdk.
 
 It requires the given `Client` and `Secret Key`.
 
 ```swift
-let nextomeSdk = NextomePhoenixSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET).build()
+let nextomeSdk = NextomeLocalizationSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET).build()
 ```
 
 !!!note
     By default the SDK works with settings defined in the web portal.
-    The NextomePhoenixSdk.Builder allows to override some of those as described in the next sections.
+    The NextomeLocalizationSdk.Builder allows to override some of those as described in the next sections.
     But please notice that this operation is extremely dangerous and should only be made in accordance with the Nextome Team because has an huge impact on the localization's performance.
 
 ## Next steps

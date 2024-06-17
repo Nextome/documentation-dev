@@ -42,7 +42,7 @@ This parameter is only configurable during the SDK initialization.
 
 === "Android"
     ``` kotlin
-    nextomeSdk = NextomePhoenixSdk(
+    nextomeSdk = NextomeLocalizationSdk(
         clientId = CLIENT_ID,
         clientSecret = CLIENT_SECRET,
         context = context as ApplicationContext,
@@ -51,7 +51,7 @@ This parameter is only configurable during the SDK initialization.
     ```
 === "iOS"
     ``` swift
-    NextomePhoenixSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
+    NextomeLocalizationSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
         .setEventTimeoutDuration(millis: 60)
         .build()
     ```

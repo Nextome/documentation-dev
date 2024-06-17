@@ -3,7 +3,7 @@
 A full working example app is available on [this repository](https://github.com/Nextome/nextome-phoenix-android-whitelabel). Run the MapActivity to see Nextome Sdk in action. It also contains a seamless outdoor/indoor map integration using OpenStreetMap for outdoor and Nextome Flutter Map for indoor.
 
 ## Prerequisites
-- Your project has min SDK version >= 23;
+- Your project has min SDK version >= 24;
 - Have working credentials for our artifactory repository;
 - Have working credentials for our [frontend portal](https://admin.nextome.net/);
 
@@ -68,13 +68,13 @@ Those credentials are available from your profile, in the Apps section.
     === "Groovy"
 
         ``` groovy title="project/build.gradle"
-        implementation 'net.nextome.phoenix:sdk:{last_version}'
+        implementation 'net.nextome.com.nextome.localization:nextome_localization:{last_version}'
         ```
 
     === "KTS"
 
         ``` kotlin title="project/build.gradle.kts"
-        implementation ("net.nextome.phoenix:sdk:{last_version}")
+        implementation ("net.nextome.com.nextome.localization:nextome_localization:{last_version}")
         ```
     Check latest released version [here](../Android/changelog.md)
 
@@ -108,14 +108,14 @@ To run, Nextome SDK requires the following permissions:
     The app integrating Nextome needs to ask the appropriate permissions and make sure they are accepted by the user.
 
 ## SDK Initialization
-It is possible to access all the methods of Nextome using the class `NextomePhoenixSdk`.
+It is possible to access all the methods of Nextome using the class `NextomeLocalizationSdk`.
 It requires the `application context`, the given `Client` and `Secret Key`.
 
 !!!note
     It is possible to generate or invalidate a given Client and Secret Key using our [web frontend](#retreive-client-and-secret-key).
 
 ```kotlin
-    nextomeSdk = NextomePhoenixSdk(
+    nextomeSdk = NextomeLocalizationSdk(
         clientId = CLIENT_ID,
         clientSecret = CLIENT_SECRET,
         context = context as ApplicationContext,

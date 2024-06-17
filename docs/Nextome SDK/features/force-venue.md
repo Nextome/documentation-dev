@@ -4,7 +4,7 @@ During the SDK Initialization, specify the `forcedVenueId`, this way the SDK wil
 
 === "Android"
     ```kotlin
-    nextomeSdk = NextomePhoenixSdk(
+    nextomeSdk = NextomeLocalizationSdk(
     clientId = CLIENT_ID,
     clientSecret = CLIENT_SECRET,
     context = context as ApplicationContext,
@@ -13,7 +13,7 @@ During the SDK Initialization, specify the `forcedVenueId`, this way the SDK wil
     ```
 === "iOS"
     ```swift
-    nextomeSdk = NextomePhoenixSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
+    nextomeSdk = NextomeLocalizationSdk.Builder(clientId: CLIENT_ID, clientSecret: CLIENT_SECRET)
     .setForceVenueId(venueId: myVenueId)
     .build()
     ```

@@ -7,26 +7,26 @@ hide:
 If you want, there’s an optional module that can show a live map of the indoor location of the user. 
 You have two options to integrate the UI component:
 
-1. Integrate the `PhoenixMapUtils` (Recommended method), which is a wrapper that allows you to integrate easily the SDK with the Map module
+1. Integrate the `NextomeLocalizationMapUtils` (Recommended method), which is a wrapper that allows you to integrate easily the SDK with the Map module
 2. Integrate directly the `NextomeMap`. This method requires more boilerplate code but allows more customization
 
 <p style="text-align: center;"><img src="/assets/mapIos.jpeg" width="50%"></p>
 
-## Integrate PhoenixMapUtils
-In this sections we will go through the integration of the PhoenixMapUtils. If you're interested in th NextomeMap approach you can refer to this documentation.
+## Integrate NextomeLocalizationMapUtils
+In this sections we will go through the integration of the NextomeLocalizationMapUtils. If you're interested in th NextomeMap approach you can refer to this documentation.
 
 ### Install the dependency
 
 === "Android"
-    1. In your `build.gradle` file, add dependencies for Nextome MapView and PhoenixMapUtils:
+    1. In your `build.gradle` file, add dependencies for Nextome MapView and NextomeLocalizationMapUtils:
     ```kotlin
-        implementation("com.nextome.phoenix_map_utils:phoenix_map_utils:1.4.3.3")
+        implementation("com.nextome.localization_map_utils:nextome_localization_map_utils:1.5.1.1")
         implementation("net.nextome.nextome_map_module:flutter:1.5.1")
     ```
 
 === "iOS"
-    1. Follow the [How to include steps](/Nextome%20SDK/Getting%20Started/ios-getting-started/#how-to-include) 
-    2. Update the `Podfile` adding the CocoaPods source and the Nextome source, the pod dependency and the post install script. You don't need to specify the Phoenix sdk because it is already defined as PhoenixMapUtils dependency.
+    1. Follow the [How to include steps](https://docs.nextome.dev/Nextome%20SDK/Getting%20Started/ios-getting-started/#how-to-include) 
+    2. Update the `Podfile` adding the CocoaPods source and the Nextome source, the pod dependency and the post install script. You don't need to specify the Nextome Localization sdk because it is already defined as NextomeLocalizationMapUtils dependency.
     ```swift
     platform :ios, '13.2'
 
@@ -36,7 +36,7 @@ In this sections we will go through the integration of the PhoenixMapUtils. If y
     use_frameworks!
 
     target 'MyApp' do
-        pod 'PhoenixMapUtils_Release', '1.4.4.1'
+        pod 'NextomeLocalizationMapUtils_Release', '1.5.1.1'
     end
 
     post_install do |installer|
@@ -51,7 +51,7 @@ In this sections we will go through the integration of the PhoenixMapUtils. If y
     ```
 
         !!! note
-            The PhoenixMapUtils is distributed in two different pod version, `Release` and `Debug`. Th release version will compile also for the simulate but will not show the map view. To test the map on the simulator you can use the `Debug` version instead. 
+            The NextomeLocalizationUtils is distributed in two different pod version, `Release` and `Debug`. Th release version will compile also for the simulate but will not show the map view. To test the map on the simulator you can use the `Debug` version instead. 
             It is important to use the `Release` version for the app store. 
 
     4. Install the dependency
@@ -64,16 +64,16 @@ In this sections we will go through the integration of the PhoenixMapUtils. If y
 The first step is to initialize the module.
 
 === "Android"
-    1. In your .xml layout, add a `PhoenixMapView` where you want to display the indoor map.
+    1. In your .xml layout, add a `NextomeLocalizationMapView` where you want to display the indoor map.
     ```xml
-        <com.nextome.phoenix_map_utils.PhoenixMapView
+        <com.nextome.nextome_localization_map_utils.NextomeLocalizationMapView
             android:id="@+id/indoor_map"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     ```
-    2. In your Activity/ViewModel, initialize `PhoenixMapHandler`
+    2. In your Activity/ViewModel, initialize `NextomeLocalizationMapHandler`
     ```kotlin
-        val handler = PhoenixMapHandler()
+        val handler = NextomeLocalizationMapHandler()
 
         val fragmentManager: FragmentManager = supportFragmentManager
         handler.initialize(
@@ -87,46 +87,46 @@ The first step is to initialize the module.
     1. Open th `AppDelegate`
     2. Import the module
         ```swift
-            import PhoenixMapUtils
+            import NextomeLocalizationMapUtils
         ```
-    3. Initialize the `PhoenixMapHandler` in the `didFinishLaunchingWithOptions` method:
+    3. Initialize the `NextomeLocalizationMapHandler` in the `didFinishLaunchingWithOptions` method:
         ```swift
             func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
                 // Override point for customization after application launch.
-                PhoenixMapHandler.instance.initialize()
+        NextomeLocalizationMapHandler.instance.initialize()
                 return true
             } 
         ```
-    The `PhoenixMapHandler` provide a UIViewController/Fragment and some methods to handle it.
+    The `NextomeLocalizationMapHandler` provide a UIViewController/Fragment and some methods to handle it.
     ### Integration
     1. Import the module
         ```swift
-            import PhoenixMapUtils
+            import NextomeLocalizationMapUtils
         ```
     2. Initialize the Fragment/UIViewController
-    The `PhoenixMapHandler` provides a UIViewController that you can use to show the flutter map.
+    The `NextomeLocalizationMapHandler` provides a UIViewController that you can use to show the flutter map.
 
     ```swift
-        lazy var indoorMapViewController: UIViewController = PhoenixMapHandler.instance.initializeFlutterViewController()
+        lazy var indoorMapViewController: UIViewController = NextomeLocalizationMapHandler.instance.initializeFlutterViewController()
     ```
 
 ### Show a new indoor map
 
-Once a map is available, pass the `tiles local directory`, `height` and `width` of the map to the `PhoenixMapHandler`.
+Once a map is available, pass the `tiles local directory`, `height` and `width` of the map to the `NextomeLocalizationMapHandler`.
 Those parameters can be obtained from the `LocalizationRunningState` during localization or from the specific map returned in the `NextomeVenueData`. More info on the venue data can be retrieve [here](features/venue-data.md).
 === "Android"
     `handler.setMap(mapTilesUrl = mapTilesUrl, mapHeight = mapHeight, mapWidth = mapWidth)`
 
 === "iOS"
     ```swift
-    PhoenixMapHandler.instance.setMap(tilesZipPath: runningState.tilesZipPath,
+    NextomeLocalizationMapHandler.instance.setMap(tilesZipPath: runningState.tilesZipPath,
                                         mapHeight: runningState.mapHeight,
                                         mapWidth: runningState.mapWidth)
     ```
 
 ### Update user live position
 
-When a new indoor user position is available, notify `PhoenixMapHandler` to update the blue point with:
+When a new indoor user position is available, notify `NextomeLocalizationMapHandler` to update the blue point with:
 
 === "Android"
     ```kotlin
@@ -141,7 +141,7 @@ When a new indoor user position is available, notify `PhoenixMapHandler` to upda
         let watcher = nextomeSdk.getLocalizationObservable().watch(block: {position in
             if let position = position{
                 self.lastPosition = position
-                PhoenixMapHandler.instance.updatePositionOnMap(position)
+                NextomeLocalizationMapHandler.instance.updatePositionOnMap(position)
             }
         })
     
@@ -160,7 +160,7 @@ You can set the list of Point of Interest to show on the map using this method:
 === "iOS"
     ```swift
     let pois: [NextomePoi] = runningState.venueData.getPoisByMapId(mapId: runningState.mapId)
-    PhoenixMapHandler.instance.updatePoiList(pois)
+    NextomeLocalizationMapHandler.instance.updatePoiList(pois)
     ```
 
 ### Show a path between two points on map
@@ -174,7 +174,7 @@ You can show a path on the map using this method and passing a list of Vertex. Y
 === "iOS"
     ```swift
     func showPath(path: [Vertex]){
-        PhoenixMapHandler.instance.updatePath(path: path)
+    NextomeLocalizationMapHandler.instance.updatePath(path: path)
     }
     ```
 
@@ -185,11 +185,11 @@ With this observer you can be notified of events on the map, for example, when t
     ```kotlin 
     handler.observeEvents().collect { event ->
         when (event) { 
-            is PhoenixMapHandler.OnNavigationSelected -> {
+            is NextomeLocalizationMapHandler.OnNavigationSelected -> {
                 // user clicked on "Navigate to POI"
                 val poi = event.poi
             } 
-            is PhoenixMapHandler.OnPoiClicked -> { 
+            is NextomeLocalizationMapHandler.OnPoiClicked -> { 
                 // user clicked on poi 
                 val poi = event.poi 
             }
@@ -245,7 +245,7 @@ To enable the button, use:
     2. Implement the onPoiClicked method to be notified when the user want to navigate to a certain POI.
 
         ```swift
-        PhoenixMapHandler.instance.setMapSettings(fabEnabled: true)
+        NextomeLocalizationMapHandler.instance.setMapSettings(fabEnabled: true)
         ```
 
 ### Change user position icon
@@ -274,14 +274,14 @@ The default position icon is a blue dot. If you want to change the icon, you can
 
         ```swift
         let remotePath = ""http://nextome.com/position-icon.png""
-        PhoenixMapHandler.instance.setMapSettings(customPositionResourceUrl: remotePath)
+        NextomeLocalizationMapHandler.instance.setMapSettings(customPositionResourceUrl: remotePath)
         ```
 
 
 ### React to activity lifecycle (Android Only)
-:octicons-tag-24: PhoenixMapUtils 1.4.3.3
+:octicons-tag-24: NextomeLocalizationMapUtils 1.4.3.3
 
-On Android, we suggest to foward to PhoenixMapUtils all the methods releated to the management of the activity lifecycle.
+On Android, we suggest to foward to NextomeLocalizationMapUtils all the methods releated to the management of the activity lifecycle.
 This will allow to save and recover the state of the map if configuration changes happens (for example, when the user rotates the phone screen).
 
 To do so, override the following methods in your activity:
