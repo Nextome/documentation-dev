@@ -68,13 +68,13 @@ Those credentials are available from your profile, in the Apps section.
     === "Groovy"
 
         ``` groovy title="project/build.gradle"
-        implementation 'net.nextome.com.nextome.localization:nextome_localization:{last_version}'
+        implementation 'com.nextome.localization:nextome_localization:{last_version}'
         ```
 
     === "KTS"
 
         ``` kotlin title="project/build.gradle.kts"
-        implementation ("net.nextome.com.nextome.localization:nextome_localization:{last_version}")
+        implementation ("com.nextome.localization:nextome_localization:{last_version}")
         ```
     Check latest released version [here](../Android/changelog.md)
 
