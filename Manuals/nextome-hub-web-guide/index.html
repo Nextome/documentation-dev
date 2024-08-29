@@ -1,0 +1,2629 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Web%20APIs/web-apis/">
+      
+      
+        <link rel="next" href="../../Standard%20operating%20procedures/installation-guide-for-smartphone-based-localization/">
+      
+      
+      <link rel="icon" href="../../material/library">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Nextome Hub Web Guide - Nextome Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="youtube" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nextome-hub-web-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Nextome Documentation" class="md-header__button md-logo" aria-label="Nextome Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nextome Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Nextome Hub Web Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Nextome Documentation" class="md-nav__button md-logo" aria-label="Nextome Documentation" data-md-component="logo">
+      
+  <img src="../../assets/logo-white.svg" alt="logo">
+
+    </a>
+    Nextome Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../The%20two%20technologies%20and%20the%20tools/the-two-technologies-and-the-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The two solutions and the tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Fundamental%20Concepts/fundamental_concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextome Terminology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Technical documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technical documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Nextome SDK
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Nextome SDK
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/Getting%20Started/android-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/Getting%20Started/ios-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/start-localization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_4" id="__nav_2_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Additional Features
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Additional Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/features/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/features/navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/features/venue-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Venue Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/features/force-venue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Force Venue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/features/initial-resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initial Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/Android/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Override default settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/Android/background-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [Android] Foreground service
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/nextome-map-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextome Map integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_6" id="__nav_2_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Changelog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/Android/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK/iOS/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Nextome Proximity SDK
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Nextome Proximity SDK
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK%20Proximity/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK%20Proximity/Getting%20Started/android-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK%20Proximity/Getting%20Started/ios-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK%20Proximity/Basic%20Features/start-proximity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK%20Proximity/Basic%20Features/interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Changelog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK%20Proximity/Android/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20SDK%20Proximity/iOS/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Nextome MapView
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Nextome MapView
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/nextomeMapViewClass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NextomeMapView class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_4" id="__nav_2_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/Usage/initialize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initialize
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/Usage/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/Usage/manage-tiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/Usage/manage-layers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/Usage/manage-markers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/Usage/enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enums
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_5" id="__nav_2_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Changelog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/Changelog/changelog-android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/Changelog/changelog-ios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Nextome%20Map%20View/example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Web%20APIs/web-apis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    REST APIs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Manuals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Manuals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Nextome Hub Web Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Nextome Hub Web Guide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aim-of-the-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aim of the document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-menu-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main menu sections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main menu sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beacon-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beacon management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gateway management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poi-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      POI Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fence-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fence Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualize-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualize room
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-rooms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit rooms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-picker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Picker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-hint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Hint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beacons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beacons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gateway
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historicization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Historicization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Historicization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#historicization-settings-for-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Historicization settings for tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historicization-settings-for-smartphone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Historicization settings for Smartphone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smartphone-tracking-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smartphone tracking- Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tag-tracking-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag tracking - Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard operating procedures
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Standard operating procedures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Standard%20operating%20procedures/installation-guide-for-smartphone-based-localization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation guide for smartphone-based localization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Standard%20operating%20procedures/installation-guide-for-tag-tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation guide for tag tracking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aim-of-the-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aim of the document
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    <span class="md-ellipsis">
+      Login
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-menu-sections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main menu sections
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Main menu sections">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beacon-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beacon management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gateway management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#poi-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      POI Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fence-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fence Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paths
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualize-room" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visualize room
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-rooms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit rooms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-picker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Picker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-hint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation Hint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Content
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Content">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#maps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beacons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beacons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gateway
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitoring
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Management
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historicization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Historicization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Historicization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#historicization-settings-for-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      Historicization settings for tags
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#historicization-settings-for-smartphone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Historicization settings for Smartphone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#smartphone-tracking-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Smartphone tracking- Parameters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tag-tracking-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tag tracking - Parameters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="nextome-hub-web-guide">Nextome Hub Web Guide</h1>
+<div class="admonition warning">
+<p class="admonition-title">Prerequisites</p>
+<p>Before reading this document, it is recommended that you read the documents:</p>
+<ul>
+<li>
+<p>The two solutions and the tools.</p>
+</li>
+<li>
+<p>Fundamental definitions.</p>
+</li>
+</ul>
+</div>
+<h2 id="aim-of-the-document">Aim of the document</h2>
+<p>The purpose of the present document is to provide a guide to use all the sections of the Nextome Hub Web. 
+The main functionalities of the Nextome Hub Web portal can be divided into the following four subcategories:</p>
+<ul>
+<li>
+<p>Administrative functionality:</p>
+<ul>
+<li>User creation.</li>
+<li>Permission management.</li>
+<li>Ability to add maps in which to enable smartphone tracking or tag tracking.</li>
+</ul>
+</li>
+<li>
+<p>Installation management:</p>
+<ul>
+<li>Registration of hardware (Beacons, Gateways, Tags) that are installed in facilities to enable indoor positioning technology.</li>
+<li>Battery monitoring of installed Beacons and Tags.</li>
+<li>Ability to delete, modify or move previously installed harware (Beacons, Gateways, Tags).</li>
+</ul>
+</li>
+<li>
+<p>Management of service features:</p>
+<ul>
+<li>Creation of POI (points of interest) available for the navigation service.</li>
+<li>Creations of Fence areas to which a notification in the app can be associated.</li>
+<li>Customization of routes suggested by the navigation app (Paths).</li>
+<li>Creation of virtual rooms based on which to calculate possible metrics.</li>
+<li>Setting data retention times.</li>
+<li>Enabling additional services, such as, calculating metrics on positioning data.</li>
+</ul>
+</li>
+<li>
+<p>Data view</p>
+</li>
+</ul>
+<p>It is important to note that the content of the Nextome Hub Web portal depends on the type of profile with which access is made.
+For instance, there are two types of profiles: the administrator profile and the user profile. The administrator can create and manage other utilities related to the Venues it has access to. The latter, instead, does not have the ability to manage the other utilities. In addition to this distinction, each user may have specific permissions related only to some of the resources in the system, as well as may have no visibility of others.</p>
+<h2 id="login">Login</h2>
+<p>To access the Nextome Web Hub (https://hub.nextome.com/), you must have the credentials for your user account, to enter in the login screen shown in Figure 1.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/1.png" width="35%"><figcaption style="text-align: center;"><font size="2"> Figure 1: Login screen.</font></figcaption></p>
+
+<p>User creation is the responsibility of Nextome and is linked to an e-mail address provided by the user, who will generate the corresponding password.
+Each user account has specific grants associated that allow access to certain areas of the portal and that depend on the type of license granted. Therefore, it could happen that, within the Nextome Hub Web, some sections are not visible because they are not within the sections covered by the grants associated with the account user.
+One or more Venues can be associated with each user, and one or more Maps can be associated with each Venue.
+The following guide will describe all the sections in the Nextome Web Hub.</p>
+<h2 id="main-menu-sections">Main menu sections</h2>
+<h3 id="dashboard">Dashboard</h3>
+<p>On the 'Dashboard' screen there are the details of the selected Venue (632-Ufficio Conversano, area A, Figure 2).</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/2.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 2: Dashboard screen.</font></figcaption></p>
+
+<p>Clicking on area 'A' provides access to the list of Venues connected to the user account, while clicking on area 'B' provides access to the screen in Figure 3 containing the details of the user.
+Clicking on area 'C' it is possible to change the language or log out.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/3.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 3: Users details screen.</font></figcaption></p>
+
+<p>In addition to the visualization and editing of the information associated with the user, this section also allows to use the functionality indicated in the figure by the letters 'C' and 'D'.
+The 'Add SKD app' functionality enables the user to create the token to be included in a new app (for developers).
+The 'Add app API' functionality can be used to create the token that allows you to access API calls (for developers).</p>
+<h3 id="maps">Maps</h3>
+<p>The 'Maps' section allows you to configure the system to enable indoor positioning technology and various additional services.
+This part is organized into 4 subsections 'overview', 'edit rooms', 'color piker', 'installation tips' which will be analyzed below.</p>
+<h4 id="overview">Overview</h4>
+<p>The 'Overview' subsection allows you to add objects on the map to enable location services and related features.
+In Box A in Figure 4, it is possible to choose which map to act on. In this case, for example, within the Venue 'Ufficio Conversano', there are three maps, first, second, and third floor.
+Box B, on the other hand, contains all the objects that can be added/displayed within the map. 
+Among the available objects are Beacons and Gateways which are needed to enable smartphone tracking and tag tracking respectively.
+The remaining objects 'POI', 'FENCE', 'PATHS', and 'ROOMS' enable additional features.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/4.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 4: Maps-Overview screen.</font></figcaption></p>
+
+<h5 id="beacon-management">Beacon management</h5>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span></p>
+<p>Beacons are Bluetooth transmitter devices that are installed in the facilities where smartphone tracking is required via Nextome app. In addition to the finished installation of the sensors, registration of them is also required, which can be done through the 'Venue Configurator' app (recommended choice) or through this section of the Nextome Hub Web.</p>
+<p>By first clicking on the '+' symbol that is located in close proximity to the red Beacon icon (point 1 in Figure 5), and then on the chosen map point, it will be possible to enter the sensor information and register it at the chosen location (point 2 in Figure 5). Proper registration of Beacons at the location where they are effectively installed is a prerequisite for the functioning of the proper smartphone location engine.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/5.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 5: Screen for registering a Beacon.</font></figcaption></p>
+
+<p>Instead, by clicking on the Beacon icon directly on the map (point 1 in Figure 6) it is possible to view related information, move, edit or delete the sensor (point 2 in Figure 6).</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/6.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 6: Beacon detail screen.</font></figcaption></p>
+
+<h5 id="gateway-management">Gateway management</h5>
+<p><span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>Gateways are Bluetooth receiver devices that are installed in facilities where tag tracking is required. In addition to the installation of the devices, registration to the system through this section of the Nextome Hub Web is also required. </p>
+<p>By first clicking on the '+' symbol that is close to the orange-colored Gateways icon (point 1 in Figure 7) and then on the map, it is possible to register the device at the chosen location, associating it with the relevant serial number and a name to recognize it (point 2 in Figure 7).</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/7.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 7: Screen for registering a Gateway.</font></figcaption></p>
+
+<p>By clicking directly on a Gateway within the map (item 1 in Figure 8), it is possible to view its information, edit it, move it, or delete it (box 2 in Figure 8).</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/8.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 8: Gateway detail screen.</font></figcaption></p>
+
+<h5 id="poi-management">POI Management</h5>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span></p>
+<p>POIs (Points Of Interest) consist of specific points within the map to which it is possibile to associate a name and a description. POIs, entered from the Nextome Hub Web, are viewable on the smartphone app map when the navigation feature is enabled.
+POIs can be created by first clicking on the '+' symbol close to the yellow POI icon (point 1 in Figure 9) and then on the chosen map point. The entry is concluded by entering the data to be associated on box 2 in Figure 9.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/9.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 9: Added POI screen.</font></figcaption></p>
+
+<p>By clicking directly on the POI on the map (e.g., point 1 in Figure 10) it is possible to view its details or move, edit, or delete it through box 2 in Figure 10.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/10.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 10: POI view/edit screen.</font></figcaption></p>
+
+<h5 id="fence-management">Fence Management</h5>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span> </p>
+<p>This section allows users to add circular areas within the map that identify zones within which the app user will receive a notification.
+To create an Fence area simply click on the '+' symbol close to the green events icon (point 1 in Figure 11), click the chosen point on the map, and finally enter the notification message in box 2 in Figure 11.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/11.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 11: Fence area creation screen.</font></figcaption></p>
+
+<p>Once the center of the Fence area has been created, it can be enlarged, moved or deleted by clicking on the green circle in the map (point 1 in Figure 12) and taking advantage of the features in Box 2.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/12.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 12: Screen view/edit Fence area.</font></figcaption></p>
+
+<h5 id="paths">Paths</h5>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span></p>
+<p>The creation of paths is closely linked to the navigation functionality. In fact, the creation of a given path binds the route suggested by the navigation in the app and ensures that the latter does not deviate from the path created via Nextome Hub Web.
+A route is a set of points and links between them. Points are created by clicking on the '+' symbol close to the paths icon and then on the chosen point in the map (points 1 and 2 in Figure 13). Links are created by clicking on one of the two points and using the functionality in Box 3.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/13.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 13: Path creation screen.</font></figcaption></p>
+
+<p>Figure 14 shows an example of a path consisting of a set of points and connections.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/14.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 14: Example of a path.</font></figcaption></p>
+
+<h5 id="visualize-room">Visualize room</h5>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span>  <span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>In this section it is possible to visualize the rooms by clicking  the symbol of the eye close to the room icon.
+The screen reported in Figure 15 shows the rooms on the second floor.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/15.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figure 15: Room visualization.</font></figcaption></p>
+
+<p>In the following section, a focus on the creation of the ‘room’ is given together with some detail about its utility.</p>
+<h4 id="edit-rooms">Edit rooms</h4>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span>  <span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>The 'EDIT ROOMS' section is dedicated to room management.
+The room object consists of a polygonal sub-portion of the map, which can correspond to a physical room or to a functional subdivision of the environment.
+When the map is divided into rooms, created in this section, each calculated position of the object or smartphone located by the Nextome technology is automatically associated with the room in which it is located.
+This enables the possibility of performing a subsequent analysis on the data by exploiting information on the movements between the various rooms.</p>
+<p>Using the box A shown in the screen in Figure 16, it is possible to manually create a room. In fact, by clicking on 'DRAW' it is possible to create a polygon vertex by vertex and associate a name to it.
+By clicking instead on an already existing room, it is possible to modify or delete it using the functions in box B in Figure 16.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/16.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 16: Room modification screen.</font></figcaption></p>
+
+<h4 id="color-picker">Color Picker</h4>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span>  <span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>In the 'COLOR PICKER' section it is possible to define, usign colors, the non-walkable areas within the map, i.e., the parts of the environment within which you would not like the tag or the smartphone to be located.
+To register a color to which the 'non-walkable' characteristic will be associated, it is sufficient to click with the cursor on the chosen area and, then, confirm with the icon indicated by the number 2 as shown in Figure 17.
+In the latter figure, infact, it can be seen that the color of the table has been added as 'non-walkable', all the areas of that color have therefore become unwalkable, as well as the gray of the area surrounding the map and the dark gray of the walls. In this case the calculated position of the tag or smartphone will never be positioned within the gray areas and on the walls.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/17.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 17: Schermata per la definizione delle aree non calpestabili.</font></figcaption></p>
+
+<h4 id="installation-hint">Installation Hint</h4>
+<p>The 'INSTALLATION HINT' section is aimed above all at the Nextome team that deals with the coverage study and the estimation of the number and position of the sensors to be installed.</p>
+<h3 id="content">Content</h3>
+<p>The 'Content' section allows you to manage the objects created through the 'Maps' section and to create new ones. A screen is dedicated to each type of resource which will be detailed below.</p>
+<h4 id="maps_1">Maps</h4>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span>  <span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>The maps screen, in Figure 18, shows the details of each map added within the selected venue '632 - UFFICIO CONVERSANO'. The following functions are available for each map: 'download', 'modify', 'delete'. it is also possible to add a new map by clicking on 'ADD NEW'.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/18.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 18: Content management - Map tab.</font></figcaption></p>
+
+<p>Please note that deleting a map results in the loss of all resources linked to it, including the calculated positions.</p>
+<h4 id="beacons">Beacons</h4>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span> </p>
+<p>The screen relating to the 'BEACONS' resource allows you to monitor the battery level of the Beacons installed in the structure and view the other information in the form of a table. This screen is dedicated only to the sensors that act as reference anchors, i.e., those registered in the relevant 'Maps' section. The 'TAG' screen is dedicated to the sensors associated with objects or people to be located.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/19.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 19: Content management - Beacons tab.</font></figcaption></p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The battery level is only available for Android. The IOS SDK does not provide this functionality.</p>
+</div>
+<h4 id="gateway">Gateway</h4>
+<p><span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>The screen relating to the 'GATEWAYS' resource allows you to consult, in tabular form, the information relating to the Gateways registered in the 'Maps' section.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/20.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 20: Content management - Gateway tab.</font></figcaption></p>
+
+<h4 id="tag">Tag</h4>
+<p><span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>This section allows you to manage the Beacon tags associated with objects/people to locate. Note that the addition of this resource is not present in the maps section, as a tag to be located cannot be associated with a specific position on the map during registration, precisely because it is a tag whose position is not known. Tags of this type are then associated with the Venue they are located in. Nextome technology allows you to locate the map and position where they are.
+The registration of this type of tag is carried out exclusively through the current section.
+Figure 21 shows the table containing all the tags to locate present in the venue '632 - UFFICIO CONVERSANO'.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/21.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 21: Content management - Tag tab.</font></figcaption></p>
+
+<p>By clicking on 'ADD NEW' a new tag can be registered through the screen highlighted in Figure 22. The choice of selection between 'Asset' and 'People' depends on the use made of the tag and determines the label that will identify it.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/22.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 22: Tag registration.</font></figcaption></p>
+
+<p>Figure 23 shows the two labels which represent, from left to right, a tag associated with a person and a tag associated with an object.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/23.png" width="15%"><figcaption style="text-align: center;"><font size="2"> Figura 23: Asset and people labels.</font></figcaption></p>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The battery level information is available only on gateways produced by selected suppliers.</p>
+</div>
+<h3 id="monitoring">Monitoring</h3>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span>  <span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>The current section is dedicated to displaying the resources that are localized by the Nextome technology in the selected venue. The resources can include tags associated with people or objects, respectively indicated by the PEOPLE and ASSET icons in magenta and purple, or smartphones indicated by the relative blue icon.
+Through the icons in box B in Figure 24 it is possible to enable or disable the display on the map of the resources located on the basis of their type.
+The position of the localized resources is visible directly on the map in box A.
+While the table, in box C indicates the time to which the last position calculated for the relative tag/smartphone is associated.
+Boxes A and B therefore show, for each tag/smartphone, the last calculated position, the first indicates the position on the map, the second indicates the sighting time plus some details of the located tag/smartphone.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/24.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 24: Localized device monitoring screen.</font></figcaption></p>
+
+<p>Please note that, from the details associated with the smartphone, it is not possible to trace the specific mobile phone as the device ID is a randomly generated string. Please note that for privacy reasons, the positions of the smartphones will not be visible on the portal, except in specific cases where the situation permits it. An example may be the case in which smartphones are not associated with people, but with objects, for example trolleys.</p>
+<h3 id="user-management">User Management</h3>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span>  <span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>The 'User management' section allows you to add a new user or modify existing ones.
+Note that the users managed in the current section refer to the selected Venue.
+For example, the users shown in the screenshot in the figure will only have access to Venue '632 - UFFICIO CONVERSANO'. The red box in Figure 25 shows the details of the user with the related permissions.</p>
+<p>Like the other sections, this too depends on the permissions associated with the user with whom you access the portal.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/25.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 25:  User management screen.</font></figcaption></p>
+
+<p>Once a new user is created, an email is sent to the associated address which enables the user to create his own password.</p>
+<h3 id="settings">Settings</h3>
+<p>The settings section allows you to act on localization solutions on various levels. Below is a discussion of each of the types of settings.</p>
+<h4 id="generals">Generals</h4>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span>  <span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>Below is the explanation for each of the items available in the box in Figure 26:</p>
+<ul>
+<li><em>Timezone</em> → Allows the selection of the time zone associated with the Venue.</li>
+<li><em>Real-time smartphone tracking enabled</em> → Allows you to save the smartphone positions that are calculated by the app, the positions can then be displayed on the portal within the limits of the permissions related to the user.</li>
+<li><em>Hybrid tag localization enabled</em> → Allows the smartphone on which the app is installed to detect the tags registered in the 'Resource management &gt;&gt; Tag' section.</li>
+</ul>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/26.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 26: Generals settings.</font></figcaption></p>
+
+<h4 id="historicization">Historicization</h4>
+<p>The settings in the box in Figure 27 allow you to manage the data retention methods and are specific for each of the two localization solutions 'Tag History enabled' and 'Smartphone History enabled.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/27.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 27: Data historicization settings.</font></figcaption></p>
+
+<h5 id="historicization-settings-for-tags">Historicization settings for tags</h5>
+<p><span style="color:#7B29EA"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.5 7A1.5 1.5 0 0 1 4 5.5 1.5 1.5 0 0 1 5.5 4 1.5 1.5 0 0 1 7 5.5 1.5 1.5 0 0 1 5.5 7m15.91 4.58-9-9C12.05 2.22 11.55 2 11 2H4c-1.11 0-2 .89-2 2v7c0 .55.22 1.05.59 1.41l8.99 9c.37.36.87.59 1.42.59.55 0 1.05-.23 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.56-.23-1.06-.59-1.42Z"/></svg></span> Tag Tracking</span> </p>
+<p>Below we delve into the first three settings related to Tag tracking.
+By default the tag positions calculated by the server are sent to the server and therefore the display of the calculated positions in real time on the portal is always available.
+As with smartphone locations (which we'll cover in the next section), tag locations can be subject to the following features:</p>
+<ol>
+<li>Historicization.</li>
+<li>Calculation of metrics on aggregated and processed data.</li>
+</ol>
+<p>To manage functions 1. and 2. it is possible to use the settings relating to tag tracking inside the box in the figure and described in the following table:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tag historicization enabled</td>
+<td>If enabled → the data of the tag positions are kept in a history table for a limited period, defined by the value of 'Days to keep the tag data'. The data can be consulted through the dedicated API call relating to the historical data of the assets. If disabled → The asset history data API call is not available</td>
+</tr>
+<tr>
+<td>Tag retention days</td>
+<td>If ‘Tag history enabled’ is enabled → Number of days to keep. For example, if 'Tag retention days' = 6, the positions present in the history table and available to the user will be those relating to the 6 days prior to the current day. NB the cancellation procedures start at 12 UTC of each day, therefore in the case of the example, at 12 UTC on January 8th the positions relating to January 1st and the previous days would be cancelled. If 'Tag history enabled' is disabled → 'Tag retention days' cannot be configured because it loses its meaning</td>
+</tr>
+<tr>
+<td>Tag metrics enabled</td>
+<td>If enabled → the position data is processed daily and is available within the possible Business Intelligence visual objects. The procedures that process the data and aggregate them start every day at 12 UTC and deal with the previous day's data. Then every day after 12 UTC the possible business intelligence visuals will contain information up to the previous day against which the analysis is being performed. If disabled → the Business Intelligence visuals will not be available</td>
+</tr>
+</tbody>
+</table>
+<h5 id="historicization-settings-for-smartphone">Historicization settings for Smartphone</h5>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span></p>
+<p>Let's take a closer look at the settings relating to Smartphone tracking below
+By default, the positions calculated by the app installed on the smartphone are not sent to the server and therefore cannot be subject to the following functions:</p>
+<ol>
+<li>real-time positions view on the portal</li>
+<li>historicization</li>
+<li>calculation of metrics on aggregated and processed data</li>
+</ol>
+<p>To enable the function 1. it is therefore necessary to enable 'Real-time smartphone localization enabled' in the General settings in the figure.
+To manage functions 2. and 3. it is possible to use the settings relating to smartphone tracking within the 'History' box in the figure and described in the following table.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Smartphone history enabled</td>
+<td>If enabled → the position data is kept in a history table for a limited period, defined by the value of ‘Smartphone retention days'. The data can be consulted through the dedicated API call relating to historical data. If disabled → The historical data API call is not available and the 'Data retention days' setting is not configurable</td>
+</tr>
+<tr>
+<td>Smartphone retention days</td>
+<td>If ‘Smartphone history enabled’ → Number of days to keep. For example, if 'Smartphone retention days ' = 6, the positions present in the history table and available to the user will be those relating to the 6 days preceding the current day. NB the cancellation procedures start at 12 UTC each day, therefore In the case of the example at 12 UTC on January 8 the positions relating to January 1 would be canceled and so on. If 'Smartphone history enabled' is disabled → 'Smartphone retention days' cannot be configured because it loses its meaning</td>
+</tr>
+<tr>
+<td>Smartphone analytics enabled</td>
+<td>If enabled → the position data is processed daily and is available within the possible Business Intelligence visual objects. The procedures that process the data and aggregate them start every day at 12 UTC and deal with the previous day's data. Then every day after 12 UTC the possible business intelligence visuals will contain information up to the previous day against which the analysis is being performed. If disabled → the Business Intelligence visuals will not be available.</td>
+</tr>
+</tbody>
+</table>
+<h5 id="smartphone-tracking-parameters">Smartphone tracking- Parameters</h5>
+<p><span style="color:#5BC4F0"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.82 12.5c.02-.17.04-.33.04-.5 0-.17-.02-.33-.04-.5l1.08-.81c.1-.07.1-.19.06-.32L9.93 8.64c-.06-.11-.2-.14-.31-.11l-1.28.5c-.27-.2-.56-.36-.87-.49l-.2-1.33c0-.12-.11-.21-.24-.21H5c-.15 0-.26.09-.28.21L4.5 8.53c-.29.12-.58.3-.85.47l-1.28-.5c-.12-.03-.25 0-.31.13l-1.03 1.73c-.06.14-.03.25.07.33l1.08.81c-.02.17-.03.34-.03.5 0 .17.02.33.04.5l-1.09.82c-.1.07-.1.21-.06.32l1.03 1.73c.06.13.2.13.31.13l1.28-.5c.27.18.56.34.87.47l.2 1.32c.01.12.12.21.27.21h2.04c.13 0 .24-.09.25-.21l.21-1.32c.3-.12.59-.3.86-.47l1.28.5c.12.03.25 0 .31-.13L11 13.64c.04-.11 0-.24-.08-.32l-1.1-.82M6 13.75c-1 0-1.8-.78-1.8-1.75S5 10.25 6 10.25s1.8.78 1.8 1.75S7 13.75 6 13.75M17 1H7a2 2 0 0 0-2 2v3h2V4h10v16H7v-2H5v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Z"/></svg></span> Smartphone Tracking</span></p>
+<p>In the 'Smartphone tracking - Parameters' box it is possible to configure the values ​​of the parameters that are used within the algorithm.
+it is strongly recommended to change these parameters only in agreement with the Nextome team.
+Below is the explanation for each of the items available in the box in Figure 28:
+- Scan Period → Bluetooth scan time in milliseconds to detect new beacons.
+- RSSI list max size → Maximum number of detections for each beacon that are used in the calculation of the position.
+- Between scan Period → Pause time between one scan and another in milliseconds.
+- RSSI threshold → RSSI threshold below which the relative detection is not considered significant for the calculation of the position.
+- Events timeout → time interval beyond which an entry/exit notification in/from an Event zone (registered in the Maps section) is triggered again.
+- Smartphone outdoor position interval → Sending time of outdoor positions (latitude/longitude) in milliseconds.</p>
+<p style="text-align: center;"><img src="/assets/Nextome Hub Web Guide/28.png" width="120%"><figcaption style="text-align: center;"><font size="2"> Figura 28: Smartphone localization settings screen.</font></figcaption></p>
+
+<h5 id="tag-tracking-parameters">Tag tracking - Parameters</h5>
+<p>This section is under construction and will be available soon.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>

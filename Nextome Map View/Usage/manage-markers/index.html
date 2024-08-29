@@ -1,0 +1,2323 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../manage-layers/">
+      
+      
+        <link rel="next" href="../enums/">
+      
+      
+      <link rel="icon" href="../../../material/library">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Markers - Nextome Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="youtube" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#markers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../../../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Nextome Documentation" class="md-header__button md-logo" aria-label="Nextome Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nextome Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Markers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Nextome Documentation" class="md-nav__button md-logo" aria-label="Nextome Documentation" data-md-component="logo">
+      
+  <img src="../../../assets/logo-white.svg" alt="logo">
+
+    </a>
+    Nextome Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Introduction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../The%20two%20technologies%20and%20the%20tools/the-two-technologies-and-the-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The two solutions and the tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Fundamental%20Concepts/fundamental_concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextome Terminology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Technical documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technical documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Nextome SDK
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Nextome SDK
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/Getting%20Started/android-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/Getting%20Started/ios-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/start-localization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_4" id="__nav_2_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Additional Features
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Additional Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/features/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/features/navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/features/venue-data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Get Venue Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/features/force-venue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Force Venue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/features/initial-resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initial Resources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/Android/settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Override default settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/Android/background-service/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    [Android] Foreground service
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/nextome-map-integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextome Map integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_6" id="__nav_2_1_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            Changelog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/Android/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK/iOS/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Nextome Proximity SDK
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Nextome Proximity SDK
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK%20Proximity/introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK%20Proximity/Getting%20Started/android-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK%20Proximity/Getting%20Started/ios-getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK%20Proximity/Basic%20Features/start-proximity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK%20Proximity/Basic%20Features/interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_5" id="__nav_2_2_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Changelog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK%20Proximity/Android/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Nextome%20SDK%20Proximity/iOS/changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Nextome MapView
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Nextome MapView
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nextomeMapViewClass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NextomeMapView class
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_4" id="__nav_2_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Usage
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../initialize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Initialize
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manage-tiles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manage-layers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Markers
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Markers
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marker
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Marker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marker-class-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marker class description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Marker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Path
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Path">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path-class-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Path Class description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shape-class-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape Class description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Shape
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enums/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Enums
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_5" id="__nav_2_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Changelog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Changelog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Changelog/changelog-android/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Android
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Changelog/changelog-ios/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    iOS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Web%20APIs/web-apis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    REST APIs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Manuals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Manuals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Manuals/nextome-hub-web-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nextome Hub Web Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Standard operating procedures
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Standard operating procedures
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Standard%20operating%20procedures/installation-guide-for-smartphone-based-localization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation guide for smartphone-based localization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Standard%20operating%20procedures/installation-guide-for-tag-tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation guide for tag tracking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marker
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Marker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marker-class-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marker class description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-marker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Marker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Path
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Path">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#path-class-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Path Class description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Path
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shape">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shape-class-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shape Class description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a Shape
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="markers">Markers</h1>
+<p>A marker is the graphics componend that show an information in a exact point of the map.
+NextomeMapView manage three different type of markers:</p>
+<ul>
+<li>Marker, the generic marker represented by an image</li>
+<li>Path, a list of points connected by a customizable line</li>
+<li>Shape, a list of points that represented a polygon</li>
+</ul>
+<!--- - NMWidgetMarker (FLUTTER ONLY)-->
+
+<h2 id="marker">Marker</h2>
+<p>The <code>NMMarker</code>. Is a simple marker represented by an image. Support <code>jpeg</code>, <code>png</code> and <code>gif</code> and it can be loaded from an url, from the Flutter asset folder and from a custom folder on the device.</p>
+<h3 id="marker-class-description">Marker class description</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>id: String</code></td>
+<td style="text-align: left;">The identification assigned to the marker</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>objType: String</code></td>
+<td style="text-align: left;">Hold the type of marker if the developer want to take trace about that</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>objMeta: String</code></td>
+<td style="text-align: left;">Hold some custom information if the developer want to take trace about that</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>visible: Bool</code></td>
+<td style="text-align: left;">Set if the markr is visible or not</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>x: Double</code></td>
+<td style="text-align: left;">Determinate the x position on the map</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>y: Double</code></td>
+<td style="text-align: left;">Determinate the y position on the map</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>anchor: NMAnchorPoint</code></td>
+<td style="text-align: left;">Determinate the center of the marker based on x,y position</td>
+<td style="text-align: left;">CENTER</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>zindex: Int</code></td>
+<td style="text-align: left;">The sorting rendering index</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>width: Double</code></td>
+<td style="text-align: left;">Determinate the width of the marker</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>height: Double</code></td>
+<td style="text-align: left;">Determinate the height of the marker</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>rotate: Bool</code></td>
+<td style="text-align: left;">Determinate if the marker rotate with the map or if it remains screen-vertical oriented</td>
+<td style="text-align: left;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>scale: Bool</code></td>
+<td style="text-align: left;">Determinate if the marker scale with the map or if it remains with a fixed screen-size</td>
+<td style="text-align: left;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>source: String</code></td>
+<td style="text-align: left;">Determinate the path of the image that can be JPEG, PNG or GIF</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>sourceType: NMMSourceType</code></td>
+<td style="text-align: left;">Determinate the source type of the image, it can be from an url, from Flutter folder asset, or a custom platform path</td>
+<td style="text-align: left;">INTERNET</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>onTap: Function</code></td>
+<td style="text-align: left;">Callback event fired when the widget is tapped</td>
+<td style="text-align: left;">null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-a-marker">Add a Marker</h3>
+<p>Add a Marker to an existing layer called "LayerA"</p>
+<!--- === "Dart"
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">NMMarker</span><span class="w"> </span><span class="n">marker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMMarker</span><span class="p">(</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nl">id:</span><span class="w"> </span><span class="s1">&#39;MARKER ID&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nl">x:</span><span class="w"> </span><span class="m">1000</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nl">y:</span><span class="w"> </span><span class="m">1200</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nl">width:</span><span class="w"> </span><span class="m">50</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nl">height:</span><span class="w"> </span><span class="m">50</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="k">source</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;https://sampleimage.jpg&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nl">sourceType:</span><span class="w"> </span><span class="n">NMMSourceType</span><span class="p">.</span><span class="n">INTERNET</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">);</span>
+</code></pre></div>
+-->
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Android</label><label for="__tabbed_1_2">iOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kd">var</span><span class="w"> </span><span class="nv">marker</span><span class="p">:</span><span class="w"> </span><span class="n">NMMarker</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMMarker</span><span class="p">()</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">marker</span><span class="p">.</span><span class="na">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1234&quot;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">marker</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000.0</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">marker</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1000.0</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">marker</span><span class="p">.</span><span class="na">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">30.0</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">marker</span><span class="p">.</span><span class="na">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">30.0</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">marker</span><span class="p">.</span><span class="na">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;PATH TO IMAGE&quot;</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">marker</span><span class="p">.</span><span class="na">sourceType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMSourceType</span><span class="p">.</span><span class="na">FILESYSTEM</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="n">mapview</span><span class="p">.</span><span class="na">addMarker</span><span class="p">(</span><span class="s">&quot;layerA&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">marker</span><span class="p">)</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">mapview</span><span class="p">.</span><span class="na">apply</span><span class="p">()</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">var</span> <span class="nv">marker</span><span class="p">:</span> <span class="n">NMMarker</span> <span class="p">=</span> <span class="n">NMMarker</span><span class="p">()</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">marker</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="s">&quot;1234&quot;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">marker</span><span class="p">.</span><span class="n">x</span> <span class="p">=</span> <span class="mf">1000.0</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">marker</span><span class="p">.</span><span class="n">y</span> <span class="p">=</span> <span class="mf">1000.0</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">marker</span><span class="p">.</span><span class="n">height</span> <span class="p">=</span> <span class="mf">30.0</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">marker</span><span class="p">.</span><span class="n">width</span> <span class="p">=</span> <span class="mf">30.0</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">marker</span><span class="p">.</span><span class="n">source</span> <span class="p">=</span> <span class="s">&quot;PATH TO IMAGE&quot;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="n">marker</span><span class="p">.</span><span class="n">sourceType</span> <span class="p">=</span> <span class="n">NMSourceType</span><span class="p">.</span><span class="n">FILESYSTEM</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="n">NextomeMapViewHandler</span><span class="p">.</span><span class="n">instance</span><span class="p">.</span><span class="n">addMarker</span><span class="p">(</span><span class="n">layerId</span><span class="p">:</span> <span class="s">&quot;layerA&quot;</span><span class="p">,</span> <span class="n">marker</span><span class="p">:</span> <span class="n">marker</span><span class="p">)</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">NextomeMapViewHandler</span><span class="p">.</span><span class="n">instance</span><span class="p">.</span><span class="n">apply</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="path">Path</h2>
+<p>The <code>NMPath</code>. Is marker that show a path on a map.</p>
+<h3 id="path-class-description">Path Class description</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>id: String</code></td>
+<td style="text-align: left;">The identification assigned to the marker</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>objType: String</code></td>
+<td style="text-align: left;">Hold the type of marker if the developer want to take trace about that</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>objMeta: String</code></td>
+<td style="text-align: left;">Hold some custom information if the developer want to take trace about that</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>visible: Bool</code></td>
+<td style="text-align: left;">Set if the markr is visible or not</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>zindex: Int</code></td>
+<td style="text-align: left;">The sorting rendering index</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>points: List&lt;NMPoint&gt;</code></td>
+<td style="text-align: left;">A list of path points</td>
+<td style="text-align: left;">[ ]</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>width: Double</code></td>
+<td style="text-align: left;">Determinate the stroke width</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>color: Color</code></td>
+<td style="text-align: left;">The color of the path</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>style: NMLineStyle</code></td>
+<td style="text-align: left;">The style of the path, NORMAL or DOT</td>
+<td style="text-align: left;">NORMAL</td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-a-path">Add a Path</h3>
+<p>Add a Path to an existing layer called "LayerA"</p>
+<!--- === "Dart"
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">NMPath</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMPath</span><span class="p">(</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="nl">id:</span><span class="w"> </span><span class="s1">&#39;PATH ID&#39;</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="nl">color:</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">pink</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nl">width:</span><span class="w"> </span><span class="m">4</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="nl">points:</span><span class="w"> </span><span class="p">[</span><span class="n">NMPoint</span><span class="p">(</span><span class="nl">x:</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="nl">y:</span><span class="m">1000</span><span class="p">),</span><span class="w"> </span><span class="n">NMPoint</span><span class="p">(</span><span class="nl">x:</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="nl">y:</span><span class="m">5000</span><span class="p">)]</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="p">);</span>
+</code></pre></div>
+-->
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Android</label><label for="__tabbed_2_2">iOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">var</span><span class="w"> </span><span class="nv">path</span><span class="p">:</span><span class="w"> </span><span class="n">NMPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMPath</span><span class="p">()</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">path</span><span class="p">.</span><span class="na">color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMColor</span><span class="p">(</span><span class="m">255</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">)</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">path</span><span class="p">.</span><span class="na">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2.0</span><span class="p">;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">path</span><span class="p">.</span><span class="na">style</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMLineStyle</span><span class="p">.</span><span class="na">DOT</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">path</span><span class="p">.</span><span class="na">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;path_id&quot;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="n">path</span><span class="p">.</span><span class="na">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="n">NMPoint</span><span class="p">(</span><span class="m">1000.0</span><span class="p">,</span><span class="w"> </span><span class="m">1000.0</span><span class="p">),</span><span class="w"> </span><span class="n">NMPoint</span><span class="p">(</span><span class="m">3000.0</span><span class="p">,</span><span class="w"> </span><span class="m">3000.0</span><span class="p">))</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="n">mapview</span><span class="p">.</span><span class="na">addPath</span><span class="p">(</span><span class="s">&quot;layerA&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">marker</span><span class="p">)</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">mapview</span><span class="p">.</span><span class="na">apply</span><span class="p">()</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">var</span> <span class="nv">path</span><span class="p">:</span> <span class="n">NMPath</span> <span class="p">=</span> <span class="n">NMPath</span><span class="p">()</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">path</span><span class="p">.</span><span class="n">color</span> <span class="p">=</span> <span class="n">NMColor</span><span class="p">(</span><span class="n">r</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="n">g</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="mi">100</span><span class="p">)</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">path</span><span class="p">.</span><span class="n">width</span> <span class="p">=</span> <span class="mf">2.0</span><span class="p">;</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">path</span><span class="p">.</span><span class="n">style</span> <span class="p">=</span> <span class="n">NMLineStyle</span><span class="p">.</span><span class="n">DOT</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">path</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="s">&quot;path_id&quot;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">path</span><span class="p">.</span><span class="n">points</span> <span class="p">=</span> <span class="p">[</span><span class="n">NMPoint</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mf">1000.0</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mf">1000.0</span><span class="p">),</span> <span class="n">NMPoint</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mf">3000.0</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mf">3000.0</span><span class="p">)]</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="n">NextomeMapViewHandler</span><span class="p">.</span><span class="n">instance</span><span class="p">.</span><span class="n">addPath</span><span class="p">(</span><span class="n">layerId</span><span class="p">:</span> <span class="s">&quot;layerA&quot;</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span><span class="n">path</span><span class="p">)</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">NextomeMapViewHandler</span><span class="p">.</span><span class="n">instance</span><span class="p">.</span><span class="n">apply</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h2 id="shape">Shape</h2>
+<p>The <code>NMShape</code>. Is marker that show a shape on a map.</p>
+<h3 id="shape-class-description">Shape Class description</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>id: String</code></td>
+<td style="text-align: left;">The identification assigned to the marker</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>objType: String</code></td>
+<td style="text-align: left;">Hold the type of marker if the developer want to take trace about that</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>objMeta: String</code></td>
+<td style="text-align: left;">Hold some custom information if the developer want to take trace about that</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>visible: Bool</code></td>
+<td style="text-align: left;">Set if the markr is visible or not</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>zindex: Int</code></td>
+<td style="text-align: left;">The sorting rendering index</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>x: Double</code></td>
+<td style="text-align: left;">Determinate the center x position on the map</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>y: Double</code></td>
+<td style="text-align: left;">Determinate the center y position on the map</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>points: List&lt;NMPoint&gt;</code></td>
+<td style="text-align: left;">A list of shape points</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>radius: Double</code></td>
+<td style="text-align: left;">The radious of the circle shape</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>relative: Bool</code></td>
+<td style="text-align: left;">Determinate if the points positions are relative to the center or are in absolute values</td>
+<td style="text-align: left;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>borderWidth: Double</code></td>
+<td style="text-align: left;">Determinate the stroke width</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>borderColor: Color</code></td>
+<td style="text-align: left;">The color of the path</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>borderStyle: NMLineStyle</code></td>
+<td style="text-align: left;">The style of the path, NORMAL or DOT</td>
+<td style="text-align: left;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>fillColor: Color</code></td>
+<td style="text-align: left;">Determinate the fill color</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>label: String</code></td>
+<td style="text-align: left;">Determinate a text can be shown at the center of the shape</td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>rotateLabel: Bool</code></td>
+<td style="text-align: left;">Determinate if the label have to rotate with the map or it have to be vertical aligned with the screen</td>
+<td style="text-align: left;">false</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>labelStyle: String</code></td>
+<td style="text-align: left;">The label text style provided as JSON <em>(NOT IMPLEMENTED YET)</em></td>
+<td style="text-align: left;">null</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>holePoints: List&lt;NMPoint&gt;</code></td>
+<td style="text-align: left;">A list of points represented an hole into the shape</td>
+<td style="text-align: left;">null</td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-a-shape">Add a Shape</h3>
+<p>Add a Shape to an existing layer called "LayerA"</p>
+<!--- === "Dart"
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">NMShape</span><span class="w"> </span><span class="n">shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMShape</span><span class="p">(</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="nl">id:</span><span class="w"> </span><span class="s1">&#39;SHAPE ID&#39;</span><span class="p">,</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nl">points:</span><span class="w"> </span><span class="p">[</span><span class="n">NMPoint</span><span class="p">(</span><span class="nl">x:</span><span class="w"> </span><span class="m">2400</span><span class="p">,</span><span class="w"> </span><span class="nl">y:</span><span class="m">1245</span><span class="p">),</span><span class="w"> </span><span class="n">NMPoint</span><span class="p">(</span><span class="nl">x:</span><span class="w"> </span><span class="m">3400</span><span class="p">,</span><span class="w"> </span><span class="nl">y:</span><span class="m">1545</span><span class="p">),</span><span class="w"> </span><span class="n">NMPoint</span><span class="p">(</span><span class="nl">x:</span><span class="w"> </span><span class="m">1200</span><span class="p">,</span><span class="w"> </span><span class="nl">y:</span><span class="m">5320</span><span class="p">)],</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nl">x:</span><span class="w"> </span><span class="m">2500</span><span class="p">,</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nl">y:</span><span class="w"> </span><span class="m">3500</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nl">fillColor:</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">deepPurple</span><span class="p">,</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="nl">borderColor:</span><span class="w"> </span><span class="n">Colors</span><span class="p">.</span><span class="n">amber</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="nl">borderWidth:</span><span class="w"> </span><span class="m">6</span><span class="p">,</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nl">borderStyle:</span><span class="w"> </span><span class="n">NMLineStyle</span><span class="p">.</span><span class="n">NORMAL</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="p">);</span>
+</code></pre></div>
+-->
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Android</label><label for="__tabbed_3_2">iOS</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">var</span><span class="w"> </span><span class="nv">shape</span><span class="p">:</span><span class="w"> </span><span class="n">NMShape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMShape</span><span class="p">()</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">shape</span><span class="p">.</span><span class="na">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;ShapeId&quot;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">shape</span><span class="p">.</span><span class="na">borderWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3.0</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">shape</span><span class="p">.</span><span class="na">borderColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMColor</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">255</span><span class="p">,</span><span class="w"> </span><span class="m">255</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">shape</span><span class="p">.</span><span class="na">fillColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NMColor</span><span class="p">(</span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">100</span><span class="p">,</span><span class="w"> </span><span class="m">255</span><span class="p">,</span><span class="w"> </span><span class="m">0.23</span><span class="p">)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">shape</span><span class="p">.</span><span class="na">relative</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="n">shape</span><span class="p">.</span><span class="na">points</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">listOf</span><span class="p">(</span><span class="n">NMPoint</span><span class="p">(</span><span class="m">1300.0</span><span class="p">,</span><span class="w"> </span><span class="m">1500.0</span><span class="p">),</span><span class="w"> </span><span class="n">NMPoint</span><span class="p">(</span><span class="m">3500.0</span><span class="p">,</span><span class="w"> </span><span class="m">3500.0</span><span class="p">),</span><span class="w"> </span><span class="n">NMPoint</span><span class="p">(</span><span class="m">1300.0</span><span class="p">,</span><span class="m">3500.0</span><span class="p">))</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="n">mapview</span><span class="p">.</span><span class="na">addShape</span><span class="p">(</span><span class="s">&quot;layerA&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">marker</span><span class="p">)</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="n">mapview</span><span class="p">.</span><span class="na">apply</span><span class="p">()</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">var</span> <span class="nv">shape</span><span class="p">:</span> <span class="n">NMShape</span> <span class="p">=</span> <span class="n">NMShape</span><span class="p">()</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">shape</span><span class="p">.</span><span class="n">id</span> <span class="p">=</span> <span class="s">&quot;ShapeId&quot;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">shape</span><span class="p">.</span><span class="n">borderWidth</span> <span class="p">=</span> <span class="mf">3.0</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">shape</span><span class="p">.</span><span class="n">borderColor</span> <span class="p">=</span> <span class="n">NMColor</span><span class="p">(</span><span class="n">r</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="n">g</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="mi">255</span><span class="p">)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">shape</span><span class="p">.</span><span class="n">fillColor</span> <span class="p">=</span> <span class="n">NMColor</span><span class="p">(</span><span class="n">r</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="n">g</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="mi">255</span><span class="p">,</span> <span class="n">a</span><span class="p">:</span> <span class="mf">0.23</span><span class="p">)</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="n">shape</span><span class="p">.</span><span class="n">relative</span> <span class="p">=</span> <span class="kc">false</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">shape</span><span class="p">.</span><span class="n">points</span> <span class="p">=</span> <span class="p">[</span><span class="n">NMPoint</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mf">1300.0</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mf">1500.0</span><span class="p">),</span> <span class="n">NMPoint</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mf">3500.0</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mf">3500.0</span><span class="p">),</span> <span class="n">NMPoint</span><span class="p">(</span><span class="n">x</span><span class="p">:</span> <span class="mf">1300.0</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="mf">3500.0</span><span class="p">)]</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">NextomeMapViewHandler</span><span class="p">.</span><span class="n">instance</span><span class="p">.</span><span class="n">addShape</span><span class="p">(</span><span class="n">layerId</span><span class="p">:</span> <span class="s">&quot;layerA&quot;</span><span class="p">,</span> <span class="n">shape</span><span class="p">:</span> <span class="n">shape</span><span class="p">)</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">NextomeMapViewHandler</span><span class="p">.</span><span class="n">instance</span><span class="p">.</span><span class="n">apply</span><span class="p">()</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
