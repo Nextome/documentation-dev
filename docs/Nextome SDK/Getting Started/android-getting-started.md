@@ -12,9 +12,9 @@ A full working example app is available on [this repository](https://github.com/
 
 ### Retreive Client and Secret Key
 Log-in the web dashboard and retrieve the `Client` and `Secret Key` for the SDK.
-Those credentials are available from your profile, in the Apps section.
+Those credentials are available from choosen Venue, Users and Roles at the Applications section.
 
-![Retrieve SDK Credentials](../../assets/sdk_key.png)
+![Retrieve SDK Credentials](../../assets/sdk_key_new.png)
 
 ## How to include
 
@@ -128,6 +128,18 @@ It requires the `application context`, the given `Client` and `Secret Key`.
     However, we strongly suggest to consult Nextome team before, since they can
     degrade sdk performances and cause phone battery drain.
 
+## Usage rules permissions
+
+To be localized, the application associated with the client_id entered during initialization must have CORE permissions. These permissions are:
+
+- At least Read permission on the Venues resource
+- At least Read permission on the Maps resource
+- At least Read permission on the Beacons resource
+- At least Read permission on the BeaconModels resource
+
+If the core permission are not granted, the SDK will not works.
+Check the role type assigned to the user on the Nextome Hub.
+
 ## Next steps
 
 - See [Start Localization](../start-localization.md) to use Nextome SDK.
@@ -138,4 +150,4 @@ Run the `MapActivity` to see Nextome Sdk in action. It also contains a seamless 
 
 <br>
 
-**© 2023 Nextome srl | All Rights Reserved.**
+**© 2026 Nextome srl | All Rights Reserved.**

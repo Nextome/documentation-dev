@@ -60,7 +60,7 @@ You can use this data to start initializing the map or showing messages to the u
 ### Nextome SDK State
 `NextomeSdkState` is a simple state machine that can have different states:
 <figure markdown>
-  ![State Flows](../../assets/flussoSDK.jpeg)
+  ![State Flows](../../assets/flussoSDK_new.png)
   <figcaption>Nextome SDK State</figcaption>
 </figure>
 
@@ -105,7 +105,8 @@ Nextome knows the venue of the user and it's downloading from the server the ass
     | `venueId: Int32`  | The venueId of the venue found    |
 
 
-#### FindFloorState
+#### FindFloorState [DEPRECATED]
+#### EvaluateIndoorOutdoorState [NEW]
 All the venue resources have been downloaded. Nextome is now computing in which floor the user is;
 
 === "Android"
@@ -114,12 +115,14 @@ All the venue resources have been downloaded. Nextome is now computing in which 
     | `isOutdoor: Bool`              | Will always be `false` in this state                                                                                                              |
     | `venueId: Int`                 | The venueId of the venue found                                                                                                                    |
     | `venueData: NextomeVenueData`  | Contains all the resources (beacons, pois, maps, events, path and settings) for a specific venue. |
+    | `detectionType: String?`       | Identify the type of the de detection. It can be `GPS` or `BEACON`. The first detection is generally `GPS`. |
 === "iOS"
     | Property                       | Description                                                                                                                                       |
     |:-------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------|
     | `isOutdoor: Bool`              | Will always be `false` in this state                                                                                                              |
     | `venueId: Int`                 | The venueId of the venue found                                                                                                                    |
     | `venueData: NextomeVenueData`  | Contains all the resources (beacons, pois, maps, events, path and settings) for a specific venue. |
+    | `detectionType: String?`       | Identify the type of the de detection. It can be `GPS` or `BEACON`. The first detection is generally `GPS`. |
 
 #### LocalizationRunningState
 
@@ -179,9 +182,9 @@ See more on [Nextome Map integration docs](nextome-map-integration.md).
                         updateState("Downloading venue ${state.venueId}...")
                     }
     
-                    is FindFloorState -> {
+                    is EvaluateIndoorOutdoorState -> {
                         showOpenStreetMap()
-                        updateState("Finding current Floor on venue ${state.venueId}...")
+                        updateState("Finding current Floor on venue ${state.venueId} with detection type ${state.detectionType}...")
                     }
     
                     is LocalizationRunningState -> {
@@ -228,10 +231,10 @@ See more on [Nextome Map integration docs](nextome-map-integration.md).
                     self.showOpenStreetMap()
                     self.updateState(value: "Downloading venue \(getPacketState.venueId)...")
     
-                }else if let findFloorState = state as? FindFloorState{
+                }else if let evaluateIndoorOutdoorState = state as? EvaluateIndoorOutdoorState{
     
                     self.showOpenStreetMap()
-                    self.updateState(value: "Finding current Floor on venue \(findFloorState.venueId)...")
+                    self.updateState(value: "Finding current Floor on venue \(evaluateIndoorOutdoorState.venueId) with detection type \(evaluateIndoorOutdoorState.detectionType)...")
     
                 }else if let runningState = state as? LocalizationRunningState{
     
@@ -298,6 +301,7 @@ Nextome SDK uses different types of exceptions to report errors:
 | Exception Type               | Description                                                                                                                  |
 |:-----------------------------|:-----------------------------------------------------------------------------------------------------------------------------|
 | `GenericException`           | A generic error happened. The SDK will continue to work normally.                                                            |
+| `Network Exception`          | Nextome encountered a network exception. It notify wrong response from server like 400, 403, 404, 500 and TimeoutConnection. |
 | `InvalidCredentialException` | Nextome SDK was started with invalid credentials. Create a new instance of Nextome SDK with valid credentials and try again. |
 | `Critical Exception`         | Nextome encountered a critical exception. It is necessary to start a new session to start localization again.                |
 
@@ -321,6 +325,11 @@ It is possible to observe errors using `getErrorsObservable()`:
                 showMessageEvent(message = error.message)
                 // Need to restart sdk
             }
+
+            is NetworkException -> {
+                showMessageEvent(message = error.message)
+                // Need to restart sdk
+            }
         }
     }    
     ```
@@ -336,6 +345,8 @@ It is possible to observe errors using `getErrorsObservable()`:
             self.showMessageEvent(message: error.message)
             //Need to restart sdk
         }else if error is GenericException {
+            self.showMessageEvent(message: error.message)
+        }else if error is NetworkException {
             self.showMessageEvent(message: error.message)
         }
     })
@@ -355,4 +366,4 @@ Run the `MapActivity` to see Nextome Sdk in action. It also contains a seamless 
 
 <br>
 
-**© 2023 Nextome srl | All Rights Reserved.**
+**© 2026 Nextome srl | All Rights Reserved.**

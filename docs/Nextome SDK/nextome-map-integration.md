@@ -3,6 +3,8 @@ title: Nextome map integration
 hide:
   - footer
 ---
+!!! Warning "[DEPRECATED]"
+    This integration has benn deprecated. See Nextome MapView Section instead.
 # Nextome map integration
 If you want, there’s an optional module that can show a live map of the indoor location of the user. 
 You have two options to integrate the UI component:

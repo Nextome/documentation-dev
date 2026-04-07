@@ -52,7 +52,7 @@ nav:
       - 'Nextome Terminology': 'Fundamental Concepts/fundamental_concepts.md'
       #- 'Types of users and grants': 'Types of users and grants/types_of_users_and_grants.md'
     - 'Technical documentation':
-      - 'Nextome SDK':
+      - 'Nextome Localization SDK':
           - 'Introduction': 'Nextome SDK/introduction.md'
           - 'Getting started':
             - 'Android': 'Nextome SDK/Getting Started/android-getting-started.md'
@@ -61,6 +61,7 @@ nav:
           - 'Additional Features':
             - 'Events': 'Nextome SDK/features/events.md'
             - 'Navigation': 'Nextome SDK/features/navigation.md'
+            - 'Navigation turn-by-turn [EXPERIMENTAL]': 'Nextome SDK/features/navigation-turn-by-turn.md'
             - 'Get Venue Data': 'Nextome SDK/features/venue-data.md'
             - 'Force Venue': 'Nextome SDK/features/force-venue.md'
             - 'Initial Resources': 'Nextome SDK/features/initial-resources.md'
@@ -91,9 +92,9 @@ nav:
           - 'Layers': 'Nextome Map View/Usage/manage-layers.md'
           - 'Markers': 'Nextome Map View/Usage/manage-markers.md'
           - 'Enums': 'Nextome Map View/Usage/enums.md'
-        - 'Changelog':
-          - "Android": "Nextome Map View/Changelog/changelog-android.md"
-          - "iOS": "Nextome Map View/Changelog/changelog-ios.md"
+        #- 'Changelog':
+        #  - "Android": "Nextome Map View/Changelog/changelog-android.md"
+        #  - "iOS": "Nextome Map View/Changelog/changelog-ios.md"
         - 'Example': 'Nextome Map View/example.md'
       - 'REST APIs' : 'Web APIs/web-apis.md' 
     - 'Manuals':

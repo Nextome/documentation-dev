@@ -82,15 +82,17 @@ To integrate the Nextome Map View you need to add the following code in your `pu
     === "Groovy"
 
         ``` groovy title="project/build.gradle"
-        implementation 'com.nextome.nextomemapview:nextomemapview:{last_version}'
+        implementation 'com.nextome.nextomemapview:nextomemapview:2.1.4.0'
+        implementation 'net.nextome.nextome_map_module:flutter_release:2.1.4'
         ```
 
     === "KTS"
 
         ``` kotlin title="project/build.gradle.kts"
-        implementation ("com.nextome.nextomemapview:nextomemapview:{last_version}")
+        implementation("com.nextome.nextomemapview:nextomemapview:2.1.4.0")
+        implementation("net.nextome.nextome_map_module:flutter_release:2.1.4")
         ```
-    Check latest released version [here](/docs/Nextome%20SDK/Android/changelog.md)
+
 
 ### Required permissions
 To run, NextomeMapView requires the following permissions:
