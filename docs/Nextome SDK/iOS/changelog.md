@@ -2,9 +2,15 @@
 !!!note
     If you want to user SDK to specify the version, then explicitly like this
     ```swift
-        pod 'NextomeLocalization', '3.2.1'
+        pod 'NextomeLocalization', '3.2.3'
 
     ```
+
+### 3.2.3 | April 2026
+ * Fix on user presmissions;
+ * Fix Localization based on beacon but in another geo position respect to the beacon's venue;
+ * Fix when smartphone is resumed from the standby, the positions are not shipped to the server;
+ * Other minor bufixes;
 
 ### 3.2.1 | March 2026
  * BREAKING - Removed FindFloorState and replaced with EvaluateIndoorOutdoorState;

@@ -1,5 +1,9 @@
 # Nextome SDK - Android Changelog
 
+### 3.2.3 | April 2026
+ * Fix on user presmissions;
+ * Other minor bufixes;
+
 ### 3.2.1 | March 2026
  * BREAKING - Removed FindFloorState and replaced with EvaluateIndoorOutdoorState;
  * Updated to Android SDK 36;
