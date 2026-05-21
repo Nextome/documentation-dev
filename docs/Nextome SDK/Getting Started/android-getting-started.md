@@ -140,6 +140,11 @@ To be localized, the application associated with the client_id entered during in
 If the core permission are not granted, the SDK will not works.
 Check the role type assigned to the user on the Nextome Hub.
 
+- At least Read permission on the Settgins resource
+
+This permission is not intended to be as core permissions, so no error is fired but it is recommanded to fetching the venue settings correctly.
+For example, if you don't see realtime position on Hub Web, but the settings is setted on TRUE, maybe the account associated roles haven't READ on Settings resource.
+
 ## Next steps
 
 - See [Start Localization](../start-localization.md) to use Nextome SDK.
