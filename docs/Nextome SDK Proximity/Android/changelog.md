@@ -1,5 +1,8 @@
 # Nextome Proximity SDK - Android Changelog
 
+### 1.0.6 | May 2026
+ * Android support for 16Kb;
+
 ### 1.0.1-rc04
 * Bugfix
 
