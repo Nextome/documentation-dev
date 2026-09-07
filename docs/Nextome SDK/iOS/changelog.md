@@ -2,9 +2,21 @@
 !!!note
     If you want to user SDK to specify the version, then explicitly like this
     ```swift
-        pod 'NextomeLocalization', '3.2.5'
+        pod 'NextomeLocalization', '3.3.1'
 
     ```
+
+### 3.3.1 | September 2026
+ * Bugfix Outdoor GPS coordinates
+
+### 3.3.0 | September 2026
+ * Changed authentication method into sdk inizialization;
+ * Added pause-resume the Sdk;
+ * Added the possibility to set a costum url to point at the own infrastructure;
+ * Added an extension for POI called on demand to retrieve more POIs data related to custom Html e Multemdia info;
+
+### 3.2.7 | August 2026
+ * Fix on history positions;
 
 ### 3.2.5 | May 2026
  * Fix on events data sync with server;

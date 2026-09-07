@@ -30,6 +30,21 @@ When you've done, stop the localization by calling:
     nextomeSdk.stop()
     ```
 
+## Pause-Resume localization
+The sdk provide the possibility to pause o the resume the localization e the emitted states.
+You can do that by calling:
+
+=== "Android"
+    ```kotlin
+    nextomeSdk.pauseScan() // For pause the sdk
+    nextomeSdk.resumeScan() // For resume the sdk
+    ```
+=== "iOS"
+    ```swift
+    nextomeSdk.pauseScan() // For pause the sdk
+    nextomeSdk.resumeScan() // For resume the sdk
+    ```
+
 ## Observe SDK status
 It's possible to observe the current state the Nextome SDK.
 
