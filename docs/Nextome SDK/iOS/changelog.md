@@ -6,6 +6,14 @@
 
     ```
 
+### 3.4.1 | October 2026
+ * Added a new findPathWithChangeMapSuggestions;
+
+### 3.4.0 | October 2026
+ * Added Particle Filter for position stabilization
+ * Changed Optimization for offline improved 
+ * Bugfix authentication problem
+
 ### 3.3.1 | September 2026
  * Bugfix Outdoor GPS coordinates
 
