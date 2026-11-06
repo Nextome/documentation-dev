@@ -7,7 +7,7 @@ A full working example app is available on [this repository](https://github.com/
 - Xcode 15.0
 - Make sure that your project meets these requirements: 
     - Swift 5.7
-    - Minimum deployment: iOS 13.2
+    - Minimum deployment: iOS 17.6
 - Have credentials for jFrog
 - Have credentials for our portal
 
@@ -46,10 +46,10 @@ Then it is necessary to configure our Spec Repo.
     pod init
     ```
 
-6. To your Podfile, be sure that the platform is at least 13.2 then add the CocoaPods specs source and our Nextome source. Then add the NextomeLocalization pod
+6. To your Podfile, be sure that the platform is at least 17.6 then add the CocoaPods specs source and our Nextome source. Then add the NextomeLocalization pod
 
     ```
-    platform :ios, '13.2'
+    platform :ios, '17.6'
 
     source 'https://github.com/CocoaPods/Specs.git'
     source 'https://github.com/Nextome/Specs'
@@ -64,7 +64,7 @@ Then it is necessary to configure our Spec Repo.
     !!!note
         Since SDK is still in RC CocoaPods require to specify the version explicitly like this
         ```swift
-            pod 'NextomeLocalization', '3.0.0-rc02'
+            pod 'NextomeLocalization', '3.5.0'
         ```
 
 

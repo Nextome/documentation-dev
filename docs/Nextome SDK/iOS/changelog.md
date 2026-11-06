@@ -2,9 +2,16 @@
 !!!note
     If you want to user SDK to specify the version, then explicitly like this
     ```swift
-        pod 'NextomeLocalization', '3.3.1'
+        pod 'NextomeLocalization', '3.5.0'
 
     ```
+
+### 3.5.0 | November 2026
+ * Fix Failed Allocation when particle is on on maps with > 10K pixel of width-height size
+ * Fix Wrong path calculation if the projection link is parallel to X-Y axis and if start and destination are on the same link
+ * Added CRS conversion for both Android and iOS platform
+ * Changed Trackable and Location Provider creation behavior to send positions
+ * Changed Minimun deployment target at 17.6
 
 ### 3.4.1 | October 2026
  * Added a new findPathWithChangeMapSuggestions;
